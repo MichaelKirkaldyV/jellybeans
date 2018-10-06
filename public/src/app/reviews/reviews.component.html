@@ -1,0 +1,32 @@
+<h1>Let's Eat</h1>
+<h2>Reviews for {{_restaurant.name}}</h2>
+<button [routerLink] = "['/restaurants/review/'+_restaurant._id]">New Review</button>
+<button routerLink = "/restaurants">Home</button>
+<table>
+	<thead>
+		<tr>
+			<th>Customer</th>
+			<th>Stars</th>
+			<th>Description</th>
+		</tr>		
+	</thead>
+	<tbody>
+		<tr *ngIf = "restaurant">
+			<td>{{restaurant._reviews[0].name}}</td>
+			<td>{{restaurant._reviews[0].stars}}</td>
+			<td>{{restaurant._reviews[0].review}}</td>
+		</tr>
+		<tr *ngIf = "restaurant">
+			<td>{{restaurant._reviews[1].name}}</td>
+			<td>{{restaurant._reviews[1].stars}}</td>
+			<td>{{restaurant._reviews[1].review}}</td>
+		</tr>
+		<tr *ngIf = "restaurant">
+			<td>{{restaurant._reviews[2].name}}</td>
+			<td>{{restaurant._reviews[2].stars}}</td>
+			<td>{{restaurant._reviews[2].review}}</td>
+		</tr>
+
+		
+	</tbody>
+</table>

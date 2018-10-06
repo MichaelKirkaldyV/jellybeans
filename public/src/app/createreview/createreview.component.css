@@ -1,0 +1,11 @@
+input {
+	display: block;
+}
+
+div {
+	height: 500px;
+	width: 500px;
+}
+select {
+	display: block;
+}

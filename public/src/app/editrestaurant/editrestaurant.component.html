@@ -1,0 +1,10 @@
+<h1>Let's Eat</h1>
+<h3>Edit a restaurant</h3>
+<div>
+	<form (submit) = "editRestaurant()">
+		Restaurant name <input type="text" name="name" [(ngModel)] = "restaurant.name">
+		Cuisine <input type="text" name="cuisine" [(ngModel)] = "restaurant.cuisine">
+		<button [routerLink] = "restaurants">Cancel</button>
+		<input type="submit" name="submit" value="Edit">
+	</form>
+</div>

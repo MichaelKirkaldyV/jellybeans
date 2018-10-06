@@ -1,0 +1,17 @@
+
+<h1>Let's Eat</h1>
+<h2>Write a review for {{restaurant.name}}</h2>
+<form (submit) = "addReview()">
+		Your Name <input type="text" name="reviewname" [(ngModel)] = "review.name">
+		Stars <select  name="reviewstars" [(ngModel)] = "review.stars">
+			<option name="1">1</option>
+			<option name="2">2</option>
+			<option name="3">3</option>
+			<option name="4">4</option>
+			<option name="5">5</option>
+		</select>
+		<!--Stars <input type="text" name="reviewstars" [(ngModel)] = "review.stars">!-->
+		Your review <input type="text" name="review" [(ngModel)] = "review.review">
+		<button [routerLink] = "restaurants">Cancel</button>
+		<input type="submit" name="submit" value="Submit">
+</form>
